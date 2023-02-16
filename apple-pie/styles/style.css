@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+hr {
+    width: 100%;
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+header {
+    background-image: url("../images/apple-pie.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 350px;
+    width: 100%;
+}
+
+header .vmiddle {
+    text-align: center;
+    position: relative;
+    font-size: x-large;
+    top: 50%;
+    font-weight: 500;
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    max-width: 685px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main p {
+    margin: 25px 50px;
+    text-align: justify;
+}
+
+#main img {
+    width: 100%;
+    max-width: 40%;
+}
+
+#ingredients h2 {
+    text-align: left;
+}
+
+#ingredients ul li {
+    list-style-type: "- ";
+    text-align: left;
+    margin-left: 10px;
+}
+
+#ingredients img{
+    width:100%;
+    max-width: 40%;
+}
+#directions h2 {
+    text-align: left;
+}
+
+#directions ol li {
+    text-align: left;
+    margin-left: 10px;
+}
+
+#directions ol {
+    /* 1. Remove the default list style */
+    list-style: none;
+}
+
+#directions ol>li {
+    /* 2. Create a custom list counter */
+    counter-increment: listcounter;
+}
+
+#directions ol>li::before {
+    /*3. Set the new style for the list markers */
+    content: counter(listcounter) ")";
+}
